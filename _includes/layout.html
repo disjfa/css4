@@ -1,0 +1,40 @@
+---
+title: My Rad Blog
+---
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%- for css in encore.app.css -%}
+        <link rel="stylesheet" href="{{ css }}" type="text/css">
+    {%- endfor -%}
+    <title>{{ title }}</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a href="{{ '/' | url }}" class="navbar-brand">
+            css4
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a href="{{ '/features/index.html' | url }}" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ '/browsers/index.html' | url }}" class="nav-link">Browsers</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+{{ content | safe }}
+{%- for js in encore.app.js -%}
+    <script src="{{ js }}"></script>
+{%- endfor -%}
+</body>
+</html>

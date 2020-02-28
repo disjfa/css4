@@ -1,0 +1,51 @@
+---
+layout: layout.html
+title: Features
+---
+
+<div class="container py-3">
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>name</th>
+                <th>title</th>
+                <th>status</th>
+                <th>chrome</th>
+                <th>firefox</th>
+                <th>edge</th>
+                <th>safari</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for item in features %}
+                <tr>
+                    <td>
+                        <a href="https://caniuse.com/{{ item.name }}">
+                            {{ item.name }}
+                        </a>
+                    </td>
+                    <td>{{ item.title }}</td>
+                    <td>{{ item.status }}</td>
+                    <td class="text-nowrap">
+                        <i class="fab fa-fw fa-chrome"></i>
+                        {{ item.browsers.chrome }}
+                    </td>
+                    <td class="text-nowrap">
+                        <i class="fab fa-fw fa-firefox"></i>
+                        {{ item.browsers.firefox }}
+                    </td>
+                    <td class="text-nowrap">
+                        <i class="fab fa-fw fa-edge"></i>
+                        {{ item.browsers.edge }}
+                    </td>
+                    <td class="text-nowrap">
+                        <i class="fab fa-fw fa-safari"></i>
+                        {{ item.browsers.safari }}
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
