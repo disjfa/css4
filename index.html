@@ -4,21 +4,45 @@ title: Browser features
 ---
 
 <div class="container py-3">
-    <table class="table table-striped">
-        {% for item in stats %}
+    <h1>Css4</h1>
+    <p>
+        This is an overview built with the <a href="https://www.npmjs.com/package/caniuse-db">caniuse-db</a> package.
+    </p>
+    <p>
+        The overview here is the date when major browsers (<i class="fab fa-chrome"></i> chrome,
+        <i class="fab fa-firefox"></i> firefox, <i class="fab fa-edge"></i> edge, <i class="fab fa-safari"></i> safari)
+        support the item, ordered by the date of the latest browser that supports the feature. The source can be found
+        <a href="https://github.com/disjfa/css4">here</a>.
+    </p>
+    <p>
+        This page was generated on: {{ currentDate }}.
+    </p>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
             <tr>
-                <td>
-                    {{ item.date | date: "%Y-%m-%d" }}
-                </td>
-                <td>
-                    <a href="https://caniuse.com/{{ item.feature.name }}">
-                        {{ item.feature.name }}
-                    </a>
-                </td>
-                <td>
-                    {{ item.feature.title }}
-                </td>
+                <th>Date ok</th>
+                <th>Name</th>
+                <th>Title</th>
             </tr>
-        {% endfor %}
-    </table>
+            </thead>
+            <tbody>
+            {% for item in stats %}
+                <tr>
+                    <td class="text-nowrap">
+                        {{ item.date | date: "%Y-%m-%d" }}
+                    </td>
+                    <td>
+                        <a href="https://caniuse.com/{{ item.feature.name }}">
+                            {{ item.feature.name }}
+                        </a>
+                    </td>
+                    <td>
+                        {{ item.feature.title }}
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </div>

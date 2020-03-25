@@ -4,6 +4,8 @@ title: Features
 ---
 
 <div class="container py-3">
+    <h1>Features</h1>
+    <p>This is just a list of features from the database.</p>
     <div class="table-responsive">
         <table class="table table-striped">
             <thead>
@@ -27,19 +29,19 @@ title: Features
                     </td>
                     <td>{{ item.title }}</td>
                     <td>{{ item.status }}</td>
-                    <td class="text-nowrap">
+                    <td class="text-nowrap {% if item.browsers.chrome %}bg-success{% else %}bg-warning{% endif %}">
                         <i class="fab fa-fw fa-chrome"></i>
                         {{ item.browsers.chrome }}
                     </td>
-                    <td class="text-nowrap">
+                    <td class="text-nowrap {% if item.browsers.firefox %}bg-success{% else %}bg-warning{% endif %}">
                         <i class="fab fa-fw fa-firefox"></i>
                         {{ item.browsers.firefox }}
                     </td>
-                    <td class="text-nowrap">
+                    <td class="text-nowrap {% if item.browsers.edge %}bg-success{% else %}bg-warning{% endif %}">
                         <i class="fab fa-fw fa-edge"></i>
                         {{ item.browsers.edge }}
                     </td>
-                    <td class="text-nowrap">
+                    <td class="text-nowrap {% if item.browsers.safari %}bg-success{% else %}bg-warning{% endif %}">
                         <i class="fab fa-fw fa-safari"></i>
                         {{ item.browsers.safari }}
                     </td>

@@ -4,20 +4,24 @@ title: Browsers
 ---
 
 <div class="container py-3">
+    <h1>Browsers</h1>
+    <p>Just the list of browsers and the release dates.</p>
     {% for agent in agents %}
         <div class="d-flex">
             <div class="pr-4 w-25">
                 <h5 class="position-sticky" style="top: 0">{{ agent.name }}</h5>
             </div>
             <div class="flex-grow-1">
-                <table class="table table-striped">
-                    {% for date in agent.dates %}
-                        <tr>
-                            <td class="w-25">{{ date.number }}</td>
-                            <td>{{ date.date | date: "%Y-%m-%d" }}</td>
-                        </tr>
-                    {% endfor %}
-                </table>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        {% for date in agent.dates %}
+                            <tr>
+                                <td class="w-25">{{ date.number }}</td>
+                                <td>{{ date.date | date: "%Y-%m-%d" }}</td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
             </div>
         </div>
     {% endfor %}
