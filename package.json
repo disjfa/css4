@@ -15,24 +15,23 @@
   "author": "disjfa",
   "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "^0.11.1",
-    "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.10.5",
-    "@babel/node": "^7.12.6",
-    "@babel/preset-env": "^7.10.4",
+    "@11ty/eleventy": "^0.12.1",
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
     "@fortawesome/fontawesome-free": "^5.14.0",
-    "@symfony/webpack-encore": "^0.31.0",
-    "bootstrap": "^4.5.0",
-    "caniuse-db": "^1.0.30001158",
-    "caniuse-lite": "^1.0.30001158",
-    "core-js": "^3.7.0",
+    "@symfony/webpack-encore": "^1.3.0",
+    "bootstrap": "^5.0.1",
+    "caniuse-db": "^1.0.30001168",
+    "caniuse-lite": "^1.0.30001168",
+    "core-js": "^3.8.1",
     "gh-pages": "^3.1.0",
-    "jquery": "^3.5.1",
     "npm-run-all": "^4.1.5",
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
-    "node-sass": "^4.14.1",
-    "sass-loader": "^9.0.3"
+    "sass": "^1.32.13",
+    "sass-loader": "^11.1.1"
   }
 }
