@@ -39,7 +39,7 @@ title: My Rad Blog
         </div>
     </div>
 </nav>
-{{ content | safe }}
+{{ content }}
 {%- for js in encore.app.js -%}
     <script src="{{ js }}"></script>
 {%- endfor -%}
