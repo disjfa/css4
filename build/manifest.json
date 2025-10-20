@@ -1,9 +1,7 @@
 {
-  "build/app.css": "/css4/build/app.8e04152e.css",
-  "build/app.js": "/css4/build/app.dcef71e5.js",
-  "build/runtime.js": "/css4/build/runtime.414ec132.js",
-  "build/fonts/fa-solid-900.ttf": "/css4/build/fonts/fa-solid-900.45a265d0.ttf",
-  "build/fonts/fa-brands-400.ttf": "/css4/build/fonts/fa-brands-400.6205fd00.ttf",
-  "build/fonts/fa-solid-900.woff2": "/css4/build/fonts/fa-solid-900.fb8184ad.woff2",
-  "build/fonts/fa-brands-400.woff2": "/css4/build/fonts/fa-brands-400.8d3cabfc.woff2"
+  "build/app.css": "/css4/build/app.45ce89b9.css",
+  "build/app.js": "/css4/build/app.3325fe1c.js",
+  "build/runtime.js": "/css4/build/runtime.62201db3.js",
+  "build/fonts/fa-solid-900.woff2": "/css4/build/fonts/fa-solid-900.8ae0d375.woff2",
+  "build/fonts/fa-brands-400.woff2": "/css4/build/fonts/fa-brands-400.1c5c7716.woff2"
 }
