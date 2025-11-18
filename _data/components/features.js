@@ -23,6 +23,8 @@ function getFeatures() {
         firefox: getFirstYes(feature.stats.firefox),
         edge: getFirstYes(feature.stats.edge),
         safari: getFirstYes(feature.stats.safari),
+        ios_saf: getFirstYes(feature.stats.ios_saf),
+        and_chr: getFirstYes(feature.stats.and_chr),
       }
     });
     // return lite.feature(lite.features[i]);
