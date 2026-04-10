@@ -21,7 +21,7 @@
     "@babel/node": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@fortawesome/fontawesome-free": "^7.1.0",
-    "@symfony/webpack-encore": "^5.2.0",
+    "@symfony/webpack-encore": "^6.0.0",
     "bootstrap": "^5.0.1",
     "caniuse-db": "^1.0.30001168",
     "caniuse-lite": "^1.0.30001168",
